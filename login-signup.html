@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Login/Sign-Up</title>
+  <link rel="stylesheet" href="login-signup.css">
+</head>
+<body>
+  <div class="form-container">
+    <div class="form-toggle">
+      <button id="loginBtn" class="active" onclick="showLogin()">Login</button>
+      <button id="signupBtn" onclick="showSignUp()">Sign Up</button>
+    </div>
+    <div id="loginForm" class="form-content">
+      <h2>Login</h2>
+      <form  action="quiz.html" method="GET">
+        <div class="input-box">
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <p>Don't have an account? <span onclick="showSignUp()">Sign Up</span></p>
+      </form>
+    </div>
+    <div id="signupForm" class="form-content hidden">
+      <h2>Sign Up</h2>
+      <form action="quiz.html" method="GET">
+        <div class="input-box">
+          <input type="text" required>
+          <label>Full Name</label>
+        </div>
+        <div class="input-box">
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+        <p>Already have an account? <span onclick="showLogin()">Login</span></p>
+      </form>
+    </div>
+  </div>
+  <script>
+    const loginForm = document.getElementById("loginForm");
+const signupForm = document.getElementById("signupForm");
+const loginBtn = document.getElementById("loginBtn");
+const signupBtn = document.getElementById("signupBtn");
+
+function showLogin() {
+  loginForm.classList.add("active");
+  signupForm.classList.remove("active");
+  loginBtn.classList.add("active");
+  signupBtn.classList.remove("active");
+}
+
+function showSignUp() {
+  signupForm.classList.add("active");
+  loginForm.classList.remove("active");
+  signupBtn.classList.add("active");
+  loginBtn.classList.remove("active");
+}
+
+  </script>
+</body>
+</html>

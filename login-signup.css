@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+  }
+  
+  .form-container {
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    overflow: hidden;
+  }
+  
+  .form-toggle {
+    display: flex;
+    justify-content: space-around;
+    background: #2575fc;
+    padding: 10px;
+  }
+  
+  .form-toggle button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .form-toggle button.active {
+    border-bottom: 2px solid #ffaa00;
+  }
+  
+  .form-content {
+    padding: 30px;
+    display: none;
+  }
+  
+  .form-content.active {
+    display: block;
+  }
+  
+  .input-box {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .input-box label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #aaa;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  
+  .input-box input:focus + label,
+  .input-box input:valid + label {
+    top: -10px;
+    font-size: 12px;
+    color: #2575fc;
+  }
+  
+  .btn {
+    background: #2575fc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .btn:hover {
+    background: #6a11cb;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  p span {
+    color: #2575fc;
+    cursor: pointer;
+  }

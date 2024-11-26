@@ -1,0 +1,111 @@
+/* Resetting margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0e0427;
+    color: #525050;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #646085;
+    padding: 15px 30px;
+    color: white;
+}
+
+.navbar a {
+    color: rgb(226, 208, 208);
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #0c082c;
+    text-decoration: underline;
+}
+
+.navbar button {
+    background-color: #0b0425af;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Career Opportunities Section */
+.section {
+    padding: 40px 30px;
+    background-color: #646085;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 32px;
+    color: #eaeef1;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Career Category Styles */
+.career-category {
+    margin-bottom: 40px;
+}
+
+.career-category h3 {
+    font-size: 26px;
+    color: #babec2;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #06011a;
+    padding-bottom: 5px;
+}
+
+.career-category ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.career-category ul li {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #09041b;
+    box-shadow: 0 4px 6px rgba(145, 125, 125, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-category ul li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(107, 91, 91, 0.2);
+}
+
+/* Footer Section */
+footer {
+    background-color: #283d52;
+    color: rgb(59, 55, 55);
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}

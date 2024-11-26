@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Interest Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
+  
+</head>
+
+<body>
+  <header>
+    <h1>Career Interest Quiz</h1>
+    <p>Answer the following questions to find out which stream suits you best!</p>
+  </header>
+
+  <main>
+    <form id="quiz-form">
+      <div class="question">
+        <p>1. I enjoy exploring creative ideas and expressing myself artistically.</p>
+        <label><input type="radio" name="q1" value="arts" required> Agree</label>
+        <label><input type="radio" name="q1" value="commerce"> Neutral</label>
+        <label><input type="radio" name="q1" value="science"> Disagree</label>
+      </div>
+
+      <div class="question">
+        <p>2. I like solving mathematical problems and analyzing data.</p>
+        <label><input type="radio" name="q2" value="commerce" required> Agree</label>
+        <label><input type="radio" name="q2" value="science"> Neutral</label>
+        <label><input type="radio" name="q2" value="arts"> Disagree</label>
+      </div>
+
+      <div class="question">
+        <p>3. I’m curious about scientific discoveries and enjoy experimenting.</p>
+        <label><input type="radio" name="q3" value="science" required> Agree</label>
+        <label><input type="radio" name="q3" value="arts"> Neutral</label>
+        <label><input type="radio" name="q3" value="commerce"> Disagree</label>
+      </div>
+
+      <div class="question">
+        <p>4. I prefer subjects that involve history, literature, or languages.</p>
+        <label><input type="radio" name="q4" value="arts" required> Agree</label>
+        <label><input type="radio" name="q4" value="commerce"> Neutral</label>
+        <label><input type="radio" name="q4" value="science"> Disagree</label>
+      </div>
+
+      <div class="question">
+        <p>5. I enjoy managing resources and understanding business concepts.</p>
+        <label><input type="radio" name="q5" value="commerce" required> Agree</label>
+        <label><input type="radio" name="q5" value="science"> Neutral</label>
+        <label><input type="radio" name="q5" value="arts"> Disagree</label>
+      </div>
+
+      <button type="submit">Get Recommendation</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h2>Your Recommended Career Stream</h2>
+      <p id="recommendation"></p>
+    </div>
+  </main>
+
+  <script src="quiz.js"></script>
+</body>
+
+</html>
